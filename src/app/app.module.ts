@@ -13,13 +13,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { ProfileComponent } from './profile/profile.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
     {
     path:'contacts-navigation', component: ContactsNavigationComponent,
     children:[
-    {path:'contact', component: ContactComponent},
     {path:'profile', component: ProfileComponent},
     {path:'gallery', component: GalleryComponent},
       ]
@@ -34,8 +32,7 @@ const routes: Routes = [
     AppComponent,
     ContactsNavigationComponent,
     ProfileComponent,
-    GalleryComponent,
-    ContactComponent
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
